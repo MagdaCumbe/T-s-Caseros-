@@ -9,21 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f9fdfb;color:#222;line-height:1.6;}
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f9fdfb;
-color:#222;
-line-height:1.6;
-}
-
-/* BOTÃO */
 .btn{
 display:inline-block;
 background:linear-gradient(135deg,#2ecc71,#27ae60);
@@ -35,59 +23,24 @@ font-weight:600;
 transition:.3s;
 box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
+.btn:hover{transform:scale(1.05);}
 
-.btn:hover{
-transform:scale(1.05);
-}
-
-/* HERO */
 .hero{
 background:linear-gradient(120deg,#e8fff3,#ffffff);
 padding:70px 20px;
 text-align:center;
 }
 
-.hero h1{
-font-size:42px;
-max-width:900px;
-margin:auto;
-}
+.hero h1{font-size:42px;max-width:900px;margin:auto;}
+.hero span{color:#27ae60;}
+.hero p{margin:25px auto;max-width:700px;font-size:18px;}
 
-.hero span{
-color:#27ae60;
-}
+.video{margin:40px auto;max-width:800px;}
+.video iframe{width:100%;height:420px;border-radius:15px;}
 
-.hero p{
-margin:25px auto;
-max-width:700px;
-font-size:18px;
-}
+.section{padding:50px 20px;max-width:1100px;margin:auto;}
+.section h2{text-align:center;margin-bottom:30px;font-size:34px;}
 
-.video{
-margin:40px auto;
-max-width:800px;
-}
-
-.video iframe{
-width:100%;
-height:420px;
-border-radius:15px;
-}
-
-/* SEÇÕES */
-.section{
-padding:50px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.section h2{
-text-align:center;
-margin-bottom:30px;
-font-size:34px;
-}
-
-/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -103,22 +56,10 @@ transition:.3s;
 text-align:center;
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
+.card:hover{transform:translateY(-5px);}
+.card h3{color:#27ae60;margin-bottom:10px;}
+.card p{font-size:14px;opacity:.9;line-height:1.6;}
 
-.card h3{
-color:#27ae60;
-margin-bottom:10px;
-}
-
-.card p{
-font-size:14px;
-opacity:.9;
-line-height:1.6;
-}
-
-/* AUTOR */
 .author{
 display:flex;
 flex-wrap:wrap;
@@ -137,14 +78,12 @@ border:6px solid #27ae60;
 box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
-/* TESTIMONIOS */
 .testimonial{
 background:#ecfdf5;
 padding:25px;
 border-radius:15px;
 }
 
-/* PREÇO */
 .price-box{
 background:#27ae60;
 color:#fff;
@@ -159,7 +98,13 @@ font-weight:700;
 margin:20px 0;
 }
 
-/* FAQ ACCORDION */
+footer{
+background:#1e2f27;
+color:#fff;
+padding:40px 20px;
+text-align:center;
+}
+
 .faq-item{
 background:#fff;
 border-radius:12px;
@@ -201,19 +146,6 @@ padding:18px;
 transform:rotate(180deg);
 }
 
-/* FOOTER */
-footer{
-background:#1e2f27;
-color:#fff;
-padding:40px 20px;
-text-align:center;
-}
-
-footer p{
-opacity:.8;
-}
-
-/* REVEAL */
 .reveal{
 opacity:0;
 transform:translateY(40px);
@@ -240,115 +172,41 @@ max-width:480px;
 border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
-
 </style>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1144457420981659');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1144457420981659&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </head>
 
 <body>
 
 <!-- HERO -->
 <section class="hero reveal">
-<h1>Reduce la Hinchazón y Desinflama Tu Abdomen en 21 Días con <span>Tés Naturales</span> Sin Dietas Extremas</h1>
-
-<p>Descubre el método natural que ya ayudó a cientos de mujeres a sentirse más ligeras y seguras.</p>
+<h1>¿Abdomen Inflamado Todos los Días? <span>Descubre Cómo Reducirlo Naturalmente</span></h1>
+<p>Aprende a reducir la inflamación y mejorar tu digestión con tés naturales, sin dietas extremas ni sacrificios imposibles.</p>
 
 <div class="video">
 <iframe src="https://www.youtube.com/embed/-wU3kaqIx54?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" id="btnQuieroEmpezar" class="btn">QUIERO EMPEZAR AHORA</a>
+<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" class="btn">QUIERO EMPEZAR AHORA</a>
 </section>
 
 <!-- STORYTELLING -->
 <section class="section reveal">
-<h2>No Era Falta de Fuerza de Voluntad</h2>
-
-<p style="max-width:800px;margin:auto;font-size:18px;text-align:center;">
-Muchas mujeres creen que su abdomen no baja por falta de esfuerzo, pero el problema suele ser la inflamación interna.
-</p>
-
-<br>
-
-<p style="max-width:800px;margin:auto;font-size:18px;text-align:center;">
-Cuando aprendes a apoyar tu cuerpo en lugar de castigarlo, todo cambia.
-</p>
-</section>
-
-<!-- PROBLEMA -->
-<section class="section reveal">
 <h2>¿Te Identificas Con Esto?</h2>
-
 <div class="grid">
-<div class="card">❌ Abdomen inflamado constantemente</div>
-<div class="card">❌ Sensación de pesadez diaria</div>
-<div class="card">❌ Dificultad para bajar medidas</div>
-<div class="card">❌ Falta de energía</div>
+<div class="card">❌ Te despiertas con el abdomen plano y terminas el día inflamada</div>
+<div class="card">❌ Sientes pesadez después de comer</div>
+<div class="card">❌ Evitas ciertas ropas por incomodidad</div>
+<div class="card">❌ Has probado dietas pero la inflamación vuelve</div>
 </div>
 </section>
 
-<!-- SOLUCIÓN -->
 <section class="section reveal">
 <h2>La Solución Natural Que Estabas Buscando</h2>
 <p style="text-align:center;max-width:800px;margin:auto;font-size:18px;">
-Aprende a usar ingredientes como jengibre, canela, menta y limón para reducir inflamación y mejorar tu digestión.
+Aprende a usar ingredientes como jengibre, canela, menta y limón para apoyar tu digestión y reducir la inflamación de forma natural.
 <br><br>
-No es una dieta. No son pastillas. Es conocimiento y constancia.
+No es una dieta restrictiva. No son pastillas. Es conocimiento práctico y constancia.
 </p>
-</section>
-
-<!-- CONTENIDO -->
-<section class="section reveal">
-<h2>¿Qué Aprenderás?</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>🍵 Recetas Paso a Paso</h3>
-<p>Aprenderás a preparar cada té con medidas exactas y tiempos ideales para maximizar resultados.</p>
-</div>
-
-<div class="card">
-<h3>🌿 Ingredientes Económicos</h3>
-<p>Descubrirás ingredientes fáciles de encontrar y cómo actúan en tu cuerpo.</p>
-</div>
-
-<div class="card">
-<h3>📅 Plan Semanal Simple</h3>
-<p>Seguirás un plan organizado que elimina dudas y facilita la constancia.</p>
-</div>
-
-<div class="card">
-<h3>💡 Errores que Inflaman</h3>
-<p>Identificarás hábitos diarios que causan hinchazón y molestias.</p>
-</div>
-
-<div class="card">
-<h3>⚖️ Equilibrar Digestión</h3>
-<p>Mejorarás tu sistema digestivo para evitar gases y retención.</p>
-</div>
-
-<div class="card">
-<h3>💖 Hábitos Sostenibles</h3>
-<p>Crearás una rutina saludable sin sacrificios extremos.</p>
-</div>
-
-</div>
 </section>
 
 <!-- BONOS -->
@@ -363,137 +221,57 @@ No es una dieta. No son pastillas. Es conocimiento y constancia.
 <!-- AUTOR -->
 <section class="section reveal">
 <h2>Sobre la Especialista</h2>
-
 <div class="author">
-
 <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Especialista">
-
 <div>
 <h3>Especialista en Bienestar Natural Femenino</h3>
 <p>
 Especialista en Bienestar Natural y Educación en Hábitos Saludables, con formación continua en nutrición natural y salud digestiva femenina. 
-Durante los últimos años ha acompañado a cientos de mujeres en procesos de desinflamación, mejora digestiva y adopción de rutinas sostenibles. 
+Ha acompañado a cientos de mujeres en procesos de desinflamación, mejora digestiva y adopción de rutinas sostenibles.
 Su enfoque combina conocimiento práctico, ingredientes accesibles y estrategias realistas que se adaptan a la vida cotidiana, priorizando equilibrio, constancia y bienestar a largo plazo.
 </p>
 </div>
-
 </div>
 </section>
 
 <!-- TESTIMONIOS -->
 <section class="section reveal">
 <h2>Lo Que Dicen Nuestras Lectoras</h2>
-
 <div class="grid">
-
 <div class="testimonial">
-<p>⭐⭐⭐⭐⭐ 
-“En el primer mes que comencé a tomar este té bajé 3 kilos. 
-Después lo tomé durante 8 meses y perdí 30 kilos. 
-También reduje carbohidratos 😊 
-Para mí realmente funcionó.”
-</p>
-<strong>- Jeully P.</strong>
+<p>⭐⭐⭐⭐⭐ “Después de unas semanas noté mi abdomen mucho más ligero y menos hinchado al final del día.”</p>
+<strong>- María G.</strong>
 </div>
-
 <div class="testimonial">
-<p>⭐⭐⭐⭐⭐ 
-“Realmente funciona. En mi caso siempre me ayuda cuando lo hago con constancia.”
-</p>
-<strong>- Lu S.</strong>
+<p>⭐⭐⭐⭐⭐ “Me ayudó a mejorar mi digestión y sentirme más cómoda con mi cuerpo.”</p>
+<strong>- Daniela R.</strong>
 </div>
-
 <div class="testimonial">
-<p>⭐⭐⭐⭐⭐ 
-“Sí adelgaza, pero lo que más noté fue que perdí grasa corporal y desinflamé mucho el abdomen.”
-</p>
-<strong>- Dea O.</strong>
+<p>⭐⭐⭐⭐⭐ “No fue algo mágico, pero siendo constante realmente noté cambios.”</p>
+<strong>- Andrea L.</strong>
 </div>
-
 <div class="testimonial">
-<p>⭐⭐⭐⭐⭐ 
-“Me ayudó muchísimo con el estómago. Sentí menos inflamación y mejor digestión. 
-Gracias por el consejo.”
-</p>
-<strong>- Elizabeth F.</strong>
+<p>⭐⭐⭐⭐⭐ “Lo que más me gustó es que son ingredientes simples y fáciles de conseguir.”</p>
+<strong>- Sofía M.</strong>
 </div>
-
 </div>
-</section>
-
-<!-- SEÇÃO CONTADOR -->
-<section class="section reveal" style="text-align:center;">
-
-  <h2>⏰ Oferta por Tiempo Limitado</h2>
-
-  <p style="max-width:600px;margin:15px auto 25px;font-size:18px;">
-  Esta bonificación GRATIS estará disponible solo por:
-  </p>
-
-  <div 
-    id="countdown"
-    style="
-    font-size:40px;
-    font-weight:700;
-    color:#27ae60;
-    background:#ecfdf5;
-    display:inline-block;
-    padding:15px 35px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    "
-  >
-    15:00
-  </div>
-
-  <p style="margin-top:15px;font-size:14px;opacity:.7;">
-  Después de este tiempo, el acceso puede no estar disponible.
-  </p>
-
 </section>
 
 <!-- PREÇO -->
 <section class="section reveal">
 <div class="price-box">
-
 <h2>Acceso Completo Hoy</h2>
-
-<p style="text-decoration:line-through;">Precio Normal $39.90</p>
-
-<div class="price">$19.90</div>
-
-<p>Oferta Especial por Tiempo Limitado</p>
+<p style="text-decoration:line-through;">Precio Normal $19.90</p>
+<div class="price">$9.90</div>
 <p>Pago único • Acceso inmediato • Garantía 7 días</p>
-
 <br>
-
-<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" id="btnComprarAhora" class="btn">COMPRAR AHORA</a>
+<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" class="btn">COMPRAR AHORA</a>
 </div>
-</section>
-
-<!-- SEÇÃO CAPTURA GRATIS -->
-<section class="section reveal" style="text-align:center;">
-
-  <h2>🎁 Descarga Gratis</h2>
-
-  <p style="max-width:600px;margin:15px auto 30px;font-size:18px;">
-  Descubre completamente <strong>GRATIS</strong> los hábitos que están inflamando tu abdomen sin que lo notes.
-  </p>
-
-  <a href="https://magdacumbe28.hotmart.host/captura" class="btn">
-  ✅ Descubra GRATIS los 5 errores que inflaman tu abdomen
-  </a>
-
-  <p style="margin-top:12px;font-size:14px;opacity:.7;">
-  100% gratis • Sin tarjeta • Sin compromiso
-  </p>
-
 </section>
 
 <!-- GARANTÍA -->
 <section class="section reveal">
 <h2>Garantía Total de 7 Días</h2>
-
 <p style="text-align:center;max-width:700px;margin:auto;font-size:18px;">
 Prueba el método sin riesgos. Si no estás satisfecha, te devolvemos tu dinero.
 </p>
@@ -537,15 +315,13 @@ Sí, puedes acceder desde cualquier dispositivo: celular, tablet o computadora.
 Tienes 7 días para probar. Si no te gusta, puedes pedir reembolso.
 </div>
 </div>
-
 </section>
 
 <!-- CTA FINAL -->
 <section class="hero reveal">
 <h2>Empieza Hoy Tu Transformación</h2>
 <p>No postergues más tu bienestar.</p>
-
-  <a href="https://go.hotmart.com/R104495034F?dp=1" id="btnQuieroMiAcceso" class="btn">QUIERO MI ACCESO</a>
+<a href="https://go.hotmart.com/R104495034F?dp=1" class="btn">QUIERO MI ACCESO</a>
 </section>
 
 <!-- FOOTER -->
@@ -554,11 +330,9 @@ Tienes 7 días para probar. Si no te gusta, puedes pedir reembolso.
 <p>Este producto no sustituye consejo médico profesional.</p>
 </footer>
 
-<!-- SCRIPT -->
+<!-- SCRIPTS -->
 <script>
-
 const faqItems = document.querySelectorAll(".faq-item");
-
 faqItems.forEach(item=>{
 item.querySelector(".faq-question").addEventListener("click",()=>{
 item.classList.toggle("active");
@@ -567,68 +341,18 @@ item.classList.toggle("active");
 
 function revealOnScroll(){
 var reveals=document.querySelectorAll(".reveal");
-
 for(var i=0;i<reveals.length;i++){
 var windowHeight=window.innerHeight;
 var elementTop=reveals[i].getBoundingClientRect().top;
 var elementVisible=100;
-
 if(elementTop<windowHeight-elementVisible){
 reveals[i].classList.add("active");
 }
 }
 }
-
 window.addEventListener("scroll",revealOnScroll);
 revealOnScroll();
-
 </script>
-<script>
 
-// CONTADOR 15 MIN
-let timeLeft = 15 * 60; // 15 minutos em segundos
-
-const countdownElement = document.getElementById("countdown");
-
-function startCountdown() {
-
-  const timer = setInterval(function(){
-
-    let minutes = Math.floor(timeLeft / 60);
-    let seconds = timeLeft % 60;
-
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    countdownElement.innerHTML = minutes + ":" + seconds;
-
-    if(timeLeft <= 0){
-      clearInterval(timer);
-      countdownElement.innerHTML = "00:00";
-    }
-
-    timeLeft--;
-
-  }, 1000);
-
-}
-
-startCountdown();
-
-</script>
-<script>
-// RASTREAR CLIQUES NOS BOTÕES
-document.getElementById('btnQuieroEmpezar').addEventListener('click', function() {
-  fbq('track', 'InitiateCheckout');
-});
-
-document.getElementById('btnComprarAhora').addEventListener('click', function() {
-  fbq('track', 'InitiateCheckout');
-});
-
-document.getElementById('btnQuieroMiAcceso').addEventListener('click', function() {
-  fbq('track', 'InitiateCheckout');
-});
-</script>
 </body>
 </html>
