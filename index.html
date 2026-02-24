@@ -173,6 +173,24 @@ border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1144457420981659');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1144457420981659&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -186,7 +204,11 @@ box-shadow:0 10px 25px rgba(0,0,0,.15);
 <iframe src="https://www.youtube.com/embed/-wU3kaqIx54?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" class="btn">QUIERO EMPEZAR AHORA</a>
+<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" 
+   class="btn" 
+   onclick="fbq('track', 'InitiateCheckout');">
+   QUIERO EMPEZAR AHORA
+</a>
 </section>
 
 <!-- STORYTELLING -->
@@ -265,7 +287,11 @@ Su enfoque combina conocimiento práctico, ingredientes accesibles y estrategias
 <div class="price">$9.90</div>
 <p>Pago único • Acceso inmediato • Garantía 7 días</p>
 <br>
-<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" class="btn">COMPRAR AHORA</a>
+<a href="https://pay.hotmart.com/R104495034F?checkoutMode=10" 
+   class="btn" 
+   onclick="fbq('track', 'InitiateCheckout');">
+   COMPRAR AHORA
+</a>
 </div>
 </section>
 
@@ -321,7 +347,11 @@ Tienes 7 días para probar. Si no te gusta, puedes pedir reembolso.
 <section class="hero reveal">
 <h2>Empieza Hoy Tu Transformación</h2>
 <p>No postergues más tu bienestar.</p>
-<a href="https://go.hotmart.com/R104495034F?dp=1" class="btn">QUIERO MI ACCESO</a>
+<a href="https://go.hotmart.com/R104495034F?dp=1" 
+   class="btn" 
+   onclick="fbq('track', 'InitiateCheckout');">
+   QUIERO MI ACCESO
+</a>
 </section>
 
 <!-- FOOTER -->
